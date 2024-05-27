@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  /* --primary100:;
+  --primary200:;
+  --primary300:;
+  --secondary100:;
+  --secondary200:;
+  --secondary300:;
+  --text:;
+  --accent:;
+  --accent100:; */
+  --accent200:#525AA0;
+}
+body{
+  font-family: 'Switzer', sans-serif;
+}
+.animated-underline {
+  position: relative;
+  width: fit-content;
+}
+.animated-underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%; 
+  height: 2px;
+  background: linear-gradient(to right, gray, black); 
+  transition: width 0.3s ease-out;
+  transform-origin: right;
+}
+.animated-underline:hover::before {
+  width: 100%;
+}
+.parallelogram-clip{
+  clip-path: polygon(0% 19%, 100% 0%, 100% 79%, 0% 100%);
+}
+.parallelogram-clip-first-section{
+  clip-path: polygon(0% 1%, 100% 0%, 100% 97%, 0% 100%);
+}
+.parallelogram-clip-sections{
+  clip-path: polygon(0% 4%, 100% 0%, 100% 94%, 0% 100%);
+  margin-top: -20%;
+}
+.parallelogram-clip-top{
+  clip-path: polygon(0% 4%, 100% 0%, 100% 100%, 0% 100%);
+}
