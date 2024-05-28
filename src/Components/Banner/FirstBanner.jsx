@@ -19,14 +19,14 @@ const FirstBanner = () => {
   return (
     <div>
     <img src={herosvg} alt="" />
-      <div className="w-full py-36 parallelogram-clip-first-section px-7 flex flex-col gap-10 bg-[#EDEFFF]">
+      <div className="w-full py-36 parallelogram-clip-first-section px-7 flex flex-col gap-10 bg-[#EDEFFF] min-[500px]:pb-56 md:pb-72 lg:pb-96 xl:pb-[30rem]">
         <div className="text-2xl text-center font-bold">
           Your one-stop marketplace for finding the talent your business needs.
         </div>
-        <div className="grid grid-cols-2 grid-rows-4 gap-5">
-          <div className="row-span-1 col-span-1 flex flex-col gap-5">
+        <div className="grid grid-cols-2 grid-rows-4 gap-5 md:grid-cols-2 md:grid-rows-2 md:place-items-center">
+          <div className="row-span-1 col-span-1 flex flex-col gap-5 md:text-xl md:p-20">
             <div className="font-bold">Find Dev and IT professionals to scale your business.</div>
-            <div className="flex w-[140%] font-extralight text-xs flex-wrap gap-5">
+            <div className="flex w-[140%] font-extralight text-xs flex-wrap gap-5 md:text-base md:w-fit md:font-normal">
               <div className="flex gap-2 place-items-center">
                 <img src={skillsIcon} alt="" />
                 989 Skills
@@ -43,7 +43,7 @@ const FirstBanner = () => {
           </div>
           <div
             className="bg-white p-4 row-span-2 col-span-2
-                 flex flex-col items-center gap-5 font-semibold rounded-xl"
+                 flex flex-col items-center gap-5 font-semibold rounded-xl md:col-span-1 md:row-span-1"
           >
             IT & Development
             <div className="flex gap-10 flex-wrap justify-center">
@@ -84,9 +84,9 @@ const FirstBanner = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 md:row-span-2 md:col-span-1 md:place-items-center md:text-xl md:p-20">
             <div className="font-bold">Explore Creative individuals with a keen eye for detail.</div>
-            <div className="flex flex-wrap gap-5 w-[140%] text-xs">
+            <div className="flex flex-wrap gap-5 w-[140%] text-xs md:text-base md:w-fit md:font-normal">
               <div className="flex gap-2 place-items-center">
                 <img src={skillsIcon} alt="" />
                 989 Skills
@@ -102,7 +102,7 @@ const FirstBanner = () => {
             </div>
           </div>
           <div className="bg-white p-4 row-span-2 col-span-2
-                 flex flex-col items-center gap-5 font-semibold rounded-md">
+                 flex flex-col items-center gap-5 font-semibold rounded-md md:col-span-1">
             Design & Creative
             <div className="flex gap-10 flex-wrap justify-center">
             <div className="font-semibold text-wrap w-16 text-sm text-center">

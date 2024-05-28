@@ -37,7 +37,7 @@ const FourthBanner = () => {
                     </div>
                 </div>
                 <div className=''>
-                  <img src={banner2} alt="" className='h-[150px] w-[600px]' />
+                  <img src={banner2} alt="" className='h-[150px] object-cover w-[600px]' />
                 </div>
             </div>
             <div className='h-[150px] bg-[#F3F3F3] parallelogram-clip-semi-sections flex place-items-center p-5'>
@@ -53,7 +53,7 @@ const FourthBanner = () => {
                     </div>
                 </div>
                 <div className=''>
-                  <img src={banner3} alt="" className='h-[150px] w-[600px]' />
+                  <img src={banner3} alt="" className='h-[150px] w-[600px] object-cover' />
                 </div>
             </div>
         </div>

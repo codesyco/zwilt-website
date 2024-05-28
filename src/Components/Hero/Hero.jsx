@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { setActiveTab } from "../../Actions/tabActions";
 import { setInputValue } from "../../Actions/inputAction";
 import vector2 from "../../assets/Vector (1).png";
-import heroUserIcon from "../../assets/zwilt-tba-1-01 2.png";
+import heroUserIcon from "../../assets/hero.gif";
 
 const Hero = () => {
   const selectedTab = useSelector((state) => state.tab.activeTab);
@@ -43,14 +43,14 @@ const Hero = () => {
   const list3 = tabs[selectedTab].slice(6);
 
   return (
-    <div className="flex h-dvh">
-      <div className=" flex flex-col items-center gap-4 p-10">
-        <div className="text-7xl font-bold ">
+    <div className="flex">
+      <div className=" flex flex-col items-center gap-5 min-[450px]:gap-10 p-10">
+        <div className="text-7xl font-bold max-[370px]:text-5xl min-h-[150px]">
           Finding the right fit{" "}
-          <img src={heroUserIcon} alt="" className="inline-block" />
+          <img src={heroUserIcon} alt="" className="inline-block w-[70px]" />
           has never been easier.
         </div>
-        <div className="text-center text-slate-600">
+        <div className="text-center text-slate-600 min-[470px]:text-xl">
           With our rigorous pre-vetting process, you&apos;ll never have to worry
           about finding the ideal candidate ever again.
         </div>
@@ -72,8 +72,8 @@ const Hero = () => {
             <img src={vector2} alt="icon" className="w-[25px] h-[15px]" />
           </div>
         </div>
-        <div className="bg-[#F8F8F8] p-4 w-full rounded-2xl flex flex-col items-center">
-          <div className=" bg-[#D2D2D2] w-fit flex gap-4 rounded-2xl">
+        <div className="bg-[#F8F8F8] p-4 w-full rounded-2xl flex flex-col items-center  max-w-[550px] min-h-[250px] md:min-h-fit">
+          <div className=" bg-[#D2D2D2] w-fit flex gap-4 rounded-2xl min-[470px]:text-xl">
             <button
               onClick={() => handleTabClick("IT & Development")}
               className={
@@ -97,7 +97,7 @@ const Hero = () => {
           </div>
           <div className="px-1 py-4">
             {selectedTab === "IT & Development" ? (
-              <div className="flex flex-wrap gap-4 font-light ">
+              <div className="flex flex-wrap gap-4 font-light min-[470px]:text-xl">
                 {/* Render 3 lists for IT & Development */}
                 <ul>
                   {list1.map((item) => (
@@ -118,7 +118,7 @@ const Hero = () => {
                 )}
               </div>
             ) : (
-              <div className="flex gap-4">
+              <div className="flex gap-4 min-[470px]:text-xl">
                 <ul>
                   {list1.map((item) => (
                     <li key={item} className="opacity-75">{item}</li>

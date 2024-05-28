@@ -36,26 +36,55 @@ const Nav = () => {
   }, [isMenuOpen, dispatch]);
   return (
     <>
-      <div className="flex place-items-center justify-between p-4 border-r-2 bg-[var(--accent200)] mx-4 my-4 rounded-xl drop-shadow-2xl text-white">
-        <div className="flex">
-          <button ref={menuButtonRef} className="bg-transparent border-none" onClick={handleMenuClick}>
+      <div className="flex place-items-center justify-between p-4 border-r-2 bg-[var(--accent200)] mx-6 my-5 rounded-xl drop-shadow-2xl text-white">
+        <div className="flex max-[350px]:flex-row-reverse justify-between max-[350px]:w-full">
+          <button ref={menuButtonRef} className="bg-transparent border-none md:hidden" onClick={handleMenuClick}>
             <img src={isMenuOpen? closeMenu : menu} className="w-[20px] h-[20px]" alt="" />
           </button>
+          <div className="flex">
           <img src={zwilt} alt="zwilt" className="h-[25px]" />
           <img src={vector} alt="vector" className="h-[20px] place-self-center" />
+          </div>
         </div>
         <div ref={navListRef} className="md:flex">
-          {isMenuOpen && (
-            <ul className="absolute top-[110%] left-0 text-center bg-[var(--accent200)] text-white w-full flex flex-col gap-4 rounded-md shadow-md p-4">
-              <li>Find Work</li>
-              <li>Find Talent</li>
-              <li>Articles</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
-            </ul>
-          )}
+        <ul 
+          ref={navListRef}
+          className={`
+            ${isMenuOpen ? 'block' : 'hidden'} 
+            md:flex
+            md:flex-row
+            md:static 
+            md:shadow-none
+            absolute 
+            top-[110%] 
+            left-0 
+            text-center 
+            bg-[var(--accent200)] 
+            text-white 
+            w-full 
+            flex
+            flex-col 
+            gap-4
+            rounded-md 
+            shadow-md 
+            p-4 
+            md:w-auto
+          `}
+        >
+          <li>Find Work</li>
+          <li>Find Talent</li>
+          <li>Articles</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <div className="hidden max-[350px]:block">
+          <button className="bg-transparent font-normal">Log In</button>
+          <button className="bg-white text-black rounded-2xl font-normal">
+            Join Now
+          </button>
         </div>
-        <div className="flex gap-2">
+        </ul>
+        </div>
+        <div className="flex gap-2 max-[350px]:hidden">
           <button className="bg-transparent font-normal">Log In</button>
           <button className="bg-white text-black rounded-2xl font-normal">
             Join Now
