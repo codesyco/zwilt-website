@@ -4,8 +4,8 @@ import zwilthLogoVector from '../../assets/Vector.png'
 const Footer = () => {
   return (
     <div className='bg-gradient-to-b from-[#0C0C0C] to-[#202229] pt-5 px-5 flex flex-col parallelogram-clip-top gap-20 text-white'>
-      <div className='bg-[#525AA0] parallelogram-clip h-64 flex flex-col items-center justify-center gap-6 relative'>
-        <div className='text-xl'>
+      <div className='bg-[#525AA0] parallelogram-clip h-96 flex flex-col items-center justify-center gap-6 relative'>
+        <div className='text-2xl font-bold p-20 text-center'>
             Need A job done, and done well? Get started
         </div>
         <div className='absolute top-[60%] w-4/5 flex flex-col items-center gap-5'>
@@ -39,35 +39,35 @@ const Footer = () => {
         </div>
         <div>
             <div className='flex flex-col gap-4'>
-            <h2 className='text-2xl'>Connecting the right people to the right businesses.</h2>
-                <div className='flex flex-col gap-4'>
-                    <div>
+            <h2 className='text-3xl font-bold'>Connecting the right people to the right businesses.</h2>
+                <div className='flex flex-col gap-8'>
+                    <div className='flex flex-col gap-2'>
                         <p className='opacity-80'>PLATFORM</p>
-                        <ul>
+                        <ul className='flex flex-col gap-2'>
                             <li className='animated-underline'>Find Work</li>
                             <li className='animated-underline'>Find Talent</li>
                             <li className='animated-underline'>Categories</li>
                             <li className='animated-underline'>About Us</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='flex flex-col gap-2'>
                         <p className='opacity-80'>CATEGORIES</p>
-                        <ul>
+                        <ul className='flex flex-col gap-2'>
                             <li className='animated-underline'>Data Science</li>
                             <li className='animated-underline'>IT & Networking</li>
                             <li className='animated-underline'>Web & Mobile</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='flex flex-col gap-2'>
                         <p className='opacity-80'>HELP</p>
-                        <ul>
+                        <ul className='flex flex-col gap-2'>
                             <li className='animated-underline'>FAQ&apos;s</li>
                             <li className='animated-underline'>Contact Us</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className='flex flex-col gap-2'>
                         <p className='opacity-80'>GET IN TOUCH</p>
-                        <ul>
+                        <ul className='flex flex-col gap-2'>
                             <li className='animated-underline'>Instagram</li>
                             <li className='animated-underline'>Linkedin</li>
                             <li className='animated-underline'>Twitter</li>
@@ -82,10 +82,10 @@ const Footer = () => {
             All rights reserved by Zwilt
         </div>
         <div className='flex gap-4'>
-            <div>
+            <div className='underline cursor-pointer'>
                 Privacy Policy
             </div>
-            <div>
+            <div className='underline cursor-pointer'>
                 Terms and Conditions
             </div>
         </div>
