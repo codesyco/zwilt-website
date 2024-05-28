@@ -1,7 +1,7 @@
 import { SET_ACTIVE_TAB } from '../Actions/tabActions';
 
 const initialState = {
-  activeTab: 'IT & Development', // Default tab
+  activeTab: 'IT & Development',
 };
 
 const tabReducer = (state = initialState, action) => {

@@ -1,4 +1,3 @@
-// reducers/inputReducer.js
 import { SET_INPUT_VALUE } from '../Actions/inputAction';
 
 const initialState = {

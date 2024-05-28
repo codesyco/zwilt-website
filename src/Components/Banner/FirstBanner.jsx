@@ -1,4 +1,3 @@
-// zwilt-dusky.vercel.app
 import skillsIcon from "../../assets/Vector (3).png";
 import categoryIcon from "../../assets/Vector (4).png";
 import profileIcon from "../../assets/Vector (5).png";

@@ -1,4 +1,3 @@
-// reducers/index.js
 import { combineReducers } from 'redux';
 import inputReducer from './inputReducer';
 import tabReducer from './tabReducer';

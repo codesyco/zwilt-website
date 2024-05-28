@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 :root{
-  /* --primary100:;
-  --primary200:;
-  --primary300:;
-  --secondary100:;
-  --secondary200:;
-  --secondary300:;
-  --text:;
-  --accent:;
-  --accent100:; */
   --accent200:#525AA0;
 }
 body{
@@ -52,7 +43,6 @@ body{
   clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
 }
 .parallelogram-clip-semi-sections-end{
-  /* clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%); */
   margin-top: -1%;
   margin-bottom: -10%;
 }
