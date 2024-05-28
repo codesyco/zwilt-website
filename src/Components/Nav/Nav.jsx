@@ -36,7 +36,7 @@ const Nav = () => {
   }, [isMenuOpen, dispatch]);
   return (
     <>
-      <div className="flex place-items-center justify-between p-4 border-r-2 bg-[var(--accent200)] mx-6 my-5 rounded-xl drop-shadow-2xl text-white">
+      <div className="flex place-items-center justify-between p-4 border-r-2 bg-[var(--accent200)] mx-4 my-5 rounded-xl drop-shadow-2xl text-white relative">
         <div className="flex max-[350px]:flex-row-reverse justify-between max-[350px]:w-full">
           <button ref={menuButtonRef} className="bg-transparent border-none md:hidden" onClick={handleMenuClick}>
             <img src={isMenuOpen? closeMenu : menu} className="w-[20px] h-[20px]" alt="" />

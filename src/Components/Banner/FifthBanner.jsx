@@ -12,20 +12,20 @@ const FIfthBanner = () => {
           </div>
         </div>
         <div className="h-400px bg-white p-5 rounded-xl flex flex-col gap-4 lg:flex-row">
-          <div className="lg:flex lg:flex-col lg:justify-center lg:gap-5">
+          <div className=" flex flex-col gap-4 lg:flex lg:flex-col lg:justify-center lg:gap-5">
           <div className="text-2xl font-bold">Onboard without the risk.</div>
           <div className="opacity-80">
             <ul>
-              <li className="flex place-items-center">
-                <div></div>
+              <li className="flex place-items-center gap-2">
+                <div className="h-2 bg-purple-600 w-4 rounded-md"></div>
                 We pick the best for you to select.
               </li>
-              <li className="flex place-items-center">
-                <div></div>
+              <li className="flex place-items-center gap-2">
+                <div className="h-2 bg-purple-600 w-4 rounded-md"></div>
                 Thousands of vetted candidates in dozens of categories.
               </li>
-              <li className="flex place-items-center">
-                <div></div>
+              <li className="flex place-items-center gap-2">
+                <div className="h-2 bg-purple-600 w-4 rounded-md"></div>
                 Risk-free resource swapping for the best fit.
               </li>
             </ul>
