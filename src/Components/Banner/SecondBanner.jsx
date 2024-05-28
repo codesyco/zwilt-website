@@ -3,12 +3,14 @@ import vector2 from "../../assets/Vector (9).png";
 import groveLogo from "../../assets/groovehq.png";
 import groveGif from "../../assets/image 6.png";
 import groveLogoSmall from "../../assets/Group.png";
+import quote from '../../assets/“.svg'
 const SecondBanner = () => {
   return (
-    <div className="bg-[#202229] text-white parallelogram-clip-sections pt-32 pb-32 px-5 flex flex-col gap-28">
+    <div className="bg-[#202229] text-white parallelogram-clip-sections pt-32 pb-32 px-5 flex flex-col gap-28 lg:px-16 lg:flex-row lg:py-80 lg:justify-between relative">
+      <img src={quote} alt="" className="absolute right-0 top-0"/>
       <div className="flex flex-col gap-10">
-        <div className="flex flex-col gap-5">
-          <div className="text-5xl font-bold gap-5">
+        <div className="flex flex-col gap-5 lg:max-w-[350px]">
+          <div className="text-5xl font-bold gap-5 md:text-6xl">
             How it worked for Jason{" "}
             <img
               src={groveGif}
@@ -20,7 +22,7 @@ const SecondBanner = () => {
               <img src={groveLogo} alt="" className=" py-3 w-[120px]" />
             </div>
           </div>
-          <div className="opacity-80 font-light">
+          <div className="opacity-80 font-light md:text-xl">
             Zwilt enabled us to deliver on time and they&apos;ve been heavy
             hitters in our corner since.
           </div>
@@ -34,18 +36,18 @@ const SecondBanner = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 lg:max-w-[50%]">
         <div className="flex gap-5">
           <div className="w-[50px] bg-[#AF7CFF] h-[50px] flex justify-center place-items-center rounded-3xl">
             <img src={groveLogoSmall} alt="" className="w-[40px]" />
           </div>
           <div>
-            <h2 className="text-xl">Jason Makki</h2>
-            <p className="opacity-80 text-sm font-light">Engineer at GROOVE</p>
-            <p className="text-sm opacity-75 font-light">San Francisco</p>
+            <h2 className="text-xl md:text-2xl">Jason Makki</h2>
+            <p className="opacity-80 text-sm font-light md:text-base">Engineer at GROOVE</p>
+            <p className="text-sm opacity-75 font-light md:text-base">San Francisco</p>
           </div>
         </div>
-        <div className="opacity-80 font-light">
+        <div className="opacity-80 font-light md:text-xl lg:text-2xl">
           Zwilt enabled us to deliver on time and they’ve been heavy hitters in
           our corner since. Zwilt enabled us to deliver on time and they’ve been
           heavy hitters in our corner since.Zwilt enabled us to deliver on time

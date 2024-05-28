@@ -1,15 +1,20 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { toggleDropdown } from "../Actions/dropDownAction";
 import vector1 from "../assets/Vector (10).png";
 import vector2 from "../assets/Vector (11).png";
 
 const Dropdown = ({ Step, Title, Content }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(Step === 2); 
   const dispatch = useDispatch();
 
-  const handleClick = () => {
+  useEffect(() => {
+    setIsOpen(Step === 2);
+  }, [Step]);
+
+  const handleClick = (e) => {
+    e.preventDefault();
     setIsOpen(!isOpen);
     dispatch(toggleDropdown());
   };
@@ -19,6 +24,7 @@ const Dropdown = ({ Step, Title, Content }) => {
       className={`group p-4 border border-[#F0F0F0] rounded-xl mb-4 ${
         isOpen ? "dropShadow-steps" : ""
       }`}
+      open={isOpen}
     >
       <summary
         className="cursor-pointer group-open:mb-2 flex place-items-center gap-7"
@@ -33,12 +39,12 @@ const Dropdown = ({ Step, Title, Content }) => {
         >
           <img src={isOpen ? vector2 : vector1} alt="" />
         </div>
-        <div>
+        <div className="md:text-xl">
           <strong>Step&nbsp;{Step}:&nbsp;</strong>
           {Title}
         </div>
       </summary>
-      <div className="group-open:animate-slide-down">{Content}</div>
+      <div className="group-open:animate-slide-down md:text-xl">{Content}</div>
     </details>
   );
 };

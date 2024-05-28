@@ -14,19 +14,21 @@ import unrealengineIcon from "../../assets/image 250.png";
 import cinema4dIcon from "../../assets/image 251.png";
 import vectorIcon from "../../assets/Vector (6).png";
 import vectorIcon2 from "../../assets/Vector (7).png";
-import herosvg from "../../assets/Union.svg"
+import herosvg from "../../assets/Union.svg";
 const FirstBanner = () => {
   return (
     <div>
-    <img src={herosvg} alt="" />
-      <div className="w-full py-36 parallelogram-clip-first-section px-7 flex flex-col gap-10 bg-[#EDEFFF] min-[500px]:pb-56 md:pb-72 lg:pb-96 xl:pb-[30rem]">
-        <div className="text-2xl text-center font-bold">
+      <img src={herosvg} alt="" />
+      <div className="w-full py-36 px-5 parallelogram-clip-first-section lg:parallelogram-clip-first-section-lg flex flex-col gap-10 bg-[#EDEFFF] min-[500px]:pb-56 md:pb-72 lg:pb-96 xl:pb-[30rem]">
+        <div className="text-2xl text-center font-extrabold md:text-3xl lg:text-4xl">
           Your one-stop marketplace for finding the talent your business needs.
         </div>
-        <div className="grid grid-cols-2 grid-rows-4 gap-5 md:grid-cols-2 md:grid-rows-2 md:place-items-center">
-          <div className="row-span-1 col-span-1 flex flex-col gap-5 md:text-xl md:p-20">
-            <div className="font-bold">Find Dev and IT professionals to scale your business.</div>
-            <div className="flex w-[140%] font-extralight text-xs flex-wrap gap-5 md:text-base md:w-fit md:font-normal">
+        <div className="grid grid-cols-2 grid-rows-4 gap-5 md:grid-cols-2 md:grid-rows-2 md:place-items-center lg:px-16">
+          <div className="row-span-1 col-span-1 flex flex-col gap-5 md:text-2xl md:py-20 lg:justify-self-start">
+            <div className="font-bold">
+              Find Dev and IT professionals to scale your business.
+            </div>
+            <div className="flex w-[140%] text-xs flex-wrap gap-5 md:text-base md:w-fit md:font-normal lg:w-[70%] lg:gap-10">
               <div className="flex gap-2 place-items-center">
                 <img src={skillsIcon} alt="" />
                 989 Skills
@@ -37,13 +39,13 @@ const FirstBanner = () => {
               </div>
               <div className="flex gap-2 place-items-center">
                 <img src={profileIcon} alt="" />
-                 1011 Profiles
+                1011 Profiles
               </div>
             </div>
           </div>
           <div
             className="bg-white p-4 row-span-2 col-span-2
-                 flex flex-col items-center gap-5 font-semibold rounded-xl md:col-span-1 md:row-span-1"
+                 flex flex-col items-center gap-5 font-semibold rounded-xl md:col-span-1 md:row-span-1 lg:p-10"
           >
             IT & Development
             <div className="flex gap-10 flex-wrap justify-center">
@@ -84,9 +86,11 @@ const FirstBanner = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-5 md:row-span-2 md:col-span-1 md:place-items-center md:text-xl md:p-20">
-            <div className="font-bold">Explore Creative individuals with a keen eye for detail.</div>
-            <div className="flex flex-wrap gap-5 w-[140%] text-xs md:text-base md:w-fit md:font-normal">
+          <div className="flex flex-col gap-5 md:row-span-2 md:col-span-1 md:text-2xl md:py-20 lg:justify-self-start">
+            <div className="font-bold">
+              Explore Creative individuals with a keen eye for detail.
+            </div>
+            <div className="flex flex-wrap gap-5 w-[140%] text-xs md:text-base md:w-fit md:font-normal lg:w-[70%] lg:gap-10">
               <div className="flex gap-2 place-items-center">
                 <img src={skillsIcon} alt="" />
                 989 Skills
@@ -101,11 +105,13 @@ const FirstBanner = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white p-4 row-span-2 col-span-2
-                 flex flex-col items-center gap-5 font-semibold rounded-md md:col-span-1">
+          <div
+            className="bg-white p-4 row-span-2 col-span-2
+                 flex flex-col items-center gap-5 font-semibold rounded-md md:col-span-1 lg:p-10"
+          >
             Design & Creative
             <div className="flex gap-10 flex-wrap justify-center">
-            <div className="font-semibold text-wrap w-16 text-sm text-center">
+              <div className="font-semibold text-wrap w-16 text-sm text-center">
                 <div className="w-20 h-20 p-5 rounded-3xl bg-[#F6F6F6] flex place-items-center justify-center">
                   <img src={vectorIcon} alt="c" />
                 </div>
@@ -142,18 +148,21 @@ const FirstBanner = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex justify-between place-items-center px-5">
-        <div className="flex gap-4 place-items-center">
-            <div className="flex place-items-center justify-center rounded-3xl w-16 h-16 bg-[#202229]">
-                <img src={vectorIcon2} alt="" className="w-[25px] h-[15px]" />
+          <div className="flex gap-2 place-items-center justify-self-start">
+            <div className="flex place-items-center justify-center rounded-2xl w-12 h-12 bg-[#202229] md:w-16 md:h-16">
+              <img
+                src={vectorIcon2}
+                alt=""
+                className="w-[20px] h-[10px] md:w-[25px] md:h-[15px]"
+              />
             </div>
             <div>Explore More</div>
+          </div>
+          <div className="flex place-items-center">
+            <span className="font-bold">30 more &nbsp;</span> to explore
+          </div>
         </div>
-        <div>
-            <span className="font-bold">30 more</span> to explore
-        </div>
-        </div>
+        <div className="flex justify-between place-items-center md:px-10 lg:px-32"></div>
       </div>
     </div>
   );

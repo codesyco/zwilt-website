@@ -26,26 +26,30 @@ const Hero = () => {
       "Front End Developer",
       "Shopify Developer",
       "Python Developer",
-      "Web Developer",
+      "Shopify Developer",
+      "Python Developer",
+      "Full Stack Developer",
       "Explore More"
     ],
     "Design & Creative": [
       "Data Scientist",
       "Front End Developer",
       "Shopify Developer",
-      "Python Developer",
+      "Back End Developer",
+      "Astro Developer",
+      "Vue Developer",
       "Full Stack Developer",
       "Explore More",
     ],
   };
-  const list1 = tabs[selectedTab].slice(0, 3);
-  const list2 = tabs[selectedTab].slice(3, 6);
-  const list3 = tabs[selectedTab].slice(6);
+  const list1 = tabs[selectedTab].slice(0, 4);
+  const list2 = tabs[selectedTab].slice(4, 8);
+  const list3 = tabs[selectedTab].slice(8);
 
   return (
     <div className="flex justify-center">
       <div className=" flex flex-col items-center gap-5 min-[450px]:gap-10 p-10">
-        <div className="text-7xl font-bold max-[370px]:text-5xl min-h-[150px]">
+        <div className="text-5xl font-bold max-w-[500px] text-center max-[370px]:text-5xl ">
           Finding the right fit{" "}
           <img src={heroUserIcon} alt="" className="inline-block w-[70px]" />
           has never been easier.
@@ -72,8 +76,8 @@ const Hero = () => {
             <img src={vector2} alt="icon" className="w-[25px] h-[15px]" />
           </div>
         </div>
-        <div className="bg-[#F8F8F8] p-4 w-full rounded-2xl flex flex-col items-center  max-w-[550px] min-h-[250px] md:min-h-fit">
-          <div className=" bg-[#D2D2D2] w-fit flex gap-4 rounded-2xl max-[350px]:text-sm min-[470px]:text-xl">
+        <div className="bg-[#F8F8F8] p-4 w-full rounded-2xl flex flex-col items-center  max-w-[900px] min-h-[250px] md:min-h-fit">
+          <div className=" bg-[#D2D2D2] w-fit flex gap-4 text-sm rounded-2xl min-[350px]:text-[13px] min-[470px]:text-xl">
             <button
               onClick={() => handleTabClick("IT & Development")}
               className={
@@ -95,22 +99,21 @@ const Hero = () => {
               Design & Creative
             </button>
           </div>
-          <div className="px-1 py-4">
+          <div className="px-1 py-7 w-11/12">
             {selectedTab === "IT & Development" ? (
-              <div className="flex flex-wrap gap-4 font-light text-lg min-[470px]:text-lg">
-                {/* Render 3 lists for IT & Development */}
-                <ul>
+              <div className="flex flex-wrap gap-6 md:gap-10 font-light min-[470px]:text-lg md:justify-between lg:justify-between">
+                <ul className="flex flex-col gap-2">
                   {list1.map((item) => (
                     <li key={item} className={item.includes("MERN Stack Developer") || item.includes("Explore More") ? "opacity-100 font-semibold" : "opacity-75"}>{item}</li>
                   ))}
                 </ul>
-                <ul>
+                <ul className="flex flex-col gap-2">
                   {list2.map((item) => (
                     <li key={item} className={item.includes("MERN Stack Developer") || item.includes("Explore More") ? "opacity-100 font-semibold" : "opacity-75"}>{item}</li>
                   ))}
                 </ul>
                 {list3.length > 0 && (
-                  <ul>
+                  <ul className="flex flex-col gap-2">
                     {list3.map((item) => (
                       <li key={item} className={item.includes("MERN Stack Developer") || item.includes("Explore More") ? "opacity-100 font-semibold" : "opacity-75"}>{item}</li>
                     ))}
@@ -118,8 +121,8 @@ const Hero = () => {
                 )}
               </div>
             ) : (
-              <div className="flex gap-4 min-[470px]:text-xl">
-                <ul>
+              <div className="flex gap-4 min-[470px]:text-xl md:gap-10">
+                <ul className="flex flex-col gap-2">
                   {list1.map((item) => (
                     <li key={item} className="opacity-75">{item}</li>
                   ))}

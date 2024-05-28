@@ -41,6 +41,9 @@ body{
 .parallelogram-clip-first-section{
   clip-path: polygon(0% 1%, 100% 0%, 100% 97%, 0% 100%);
 }
+.parallelogram-clip-first-section-lg{
+  clip-path: polygon(0% 4%, 100% 0%, 100% 97%, 0% 100%);
+}
 .parallelogram-clip-sections{
   clip-path: polygon(0% 4%, 100% 0%, 100% 94%, 0% 100%);
   margin-top: -20%;
@@ -65,4 +68,15 @@ details summary::-webkit-details-marker {
 
 details summary::marker {
   display: none;
+}
+@media (min-width:768px) {
+  .parallelogram-clip{
+    clip-path: polygon(0% 15%, 100% 5%, 100% 85%, 0% 100%);
+  }
+  .parallelogram-clip-top{
+    clip-path: polygon(0% 3%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .parallelogram-clip-first-section{
+    clip-path: polygon(0% 4%, 100% 0%, 100% 97%, 0% 100%);
+  }
 }

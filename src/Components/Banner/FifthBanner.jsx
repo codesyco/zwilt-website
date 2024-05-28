@@ -21,7 +21,7 @@ const FIfthBanner = () => {
                 We pick the best for you to select.
               </li>
               <li className="flex place-items-center gap-2">
-                <div className="h-2 bg-purple-600 w-4 rounded-md"></div>
+                <div className="h-2 bg-purple-600 w-5 rounded-md md:w-5 lg:w-5"></div>
                 Thousands of vetted candidates in dozens of categories.
               </li>
               <li className="flex place-items-center gap-2">
