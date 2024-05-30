@@ -1,9 +1,9 @@
-import FifthBanner from "../Components/Why-Zwilt/WhyZwilt.jsx";
-import FirstBanner from "../Components/Marketplace/Markeyplace.jsx";
-import FourthBanner from "../Components/Journey/Journey.jsx";
-import SecondBanner from "../Components/Groove/SecondBanner.jsx";
-import SixthBanner from "../Components/FAQ/Faq.jsx";
-import ThirdBanner from "../Components/Process/Process.jsx";
+import WhyZwilt from "../Components/Why-Zwilt/WhyZwilt.jsx";
+import Marketplace from "../Components/Marketplace/Marketplace.jsx";
+import Journey from "../Components/Journey/Journey.jsx";
+import Groove from "../Components/Groove/Groove.jsx";
+import Faq from "../Components/FAQ/Faq.jsx";
+import Process from "../Components/Process/Process.jsx";
 import Hero from "../Components/Hero/Hero";
 
 const Home = () => {
@@ -11,12 +11,12 @@ const Home = () => {
       <>
         <div>
           <Hero/>
-          <FirstBanner/>
-          <SecondBanner/>
-          <ThirdBanner/>
-          <FourthBanner/>
-          <FifthBanner/>
-          <SixthBanner/>
+          <Marketplace/>
+          <Groove/>
+          <Process/>
+          <Journey/>
+          <WhyZwilt/>
+          <Faq/>
         </div>
       </>
     );

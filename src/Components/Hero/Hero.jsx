@@ -104,18 +104,18 @@ const Hero = () => {
           <div className="px-1 py-7 w-11/12">
             {selectedTab === "IT & Development" ? (
               <div className="flex flex-wrap gap-6 md:gap-10 font-light min-[470px]:text-lg md:justify-between lg:justify-between">
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col gap-2 min-w-[150px]">
                   {list1.map((item) => (
                     <li key={item} className={item.includes("MERN Stack Developer") || item.includes("Explore More") ? "opacity-100 font-semibold" : "opacity-75"}>{item}</li>
                   ))}
                 </ul>
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col gap-2 min-w-[150px]">
                   {list2.map((item) => (
                     <li key={item} className={item.includes("MERN Stack Developer") || item.includes("Explore More") ? "opacity-100 font-semibold" : "opacity-75"}>{item}</li>
                   ))}
                 </ul>
                 {list3.length > 0 && (
-                  <ul className="flex flex-col gap-2">
+                  <ul className="flex flex-col gap-2 min-w-[150px]">
                     {list3.map((item) => (
                       <li key={item} className={item.includes("MERN Stack Developer") || item.includes("Explore More") ? "opacity-100 font-semibold" : "opacity-75"}>{item}</li>
                     ))}
@@ -124,17 +124,17 @@ const Hero = () => {
               </div>
             ) : (
               <div className="flex flex-wrap gap-6 md:gap-10 font-light min-[470px]:text-lg md:justify-between lg:justify-between">
-                <ul className="flex flex-col gap-2">
+                <ul className="flex flex-col gap-2 min-w-[150px]">
                   {list1.map((item) => (
                     <li key={item} className="opacity-75">{item}</li>
                   ))}
                 </ul>
-                <ul>
+                <ul className="flex flex-col gap-2 min-w-[150px]">
                   {list2.map((item) => (
                     <li key={item} className="opacity-75">{item}</li>
                   ))}
                 </ul>
-                <ul>
+                <ul className="flex flex-col gap-2 min-w-[150px]">
                   {list3.map((item) => (
                     <li key={item} className="opacity-75">{item}</li>
                   ))}

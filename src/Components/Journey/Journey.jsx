@@ -53,7 +53,7 @@ const FourthBanner = () => {
                     </div>
                 </div>
                 <div className='lg:ml-auto'>
-                  <img src={banner3} alt="" className='h-[150px] w-[600px] max-[450px]:w-[500px] object-cover md:h-fit lg:w-[430px]' />
+                  <img src={banner3} alt="" className='h-[150px] w-[600px] max-[450px]:w-[450px] object-cover md:h-fit lg:w-[430px]' />
                 </div>
             </div>
         </div>
