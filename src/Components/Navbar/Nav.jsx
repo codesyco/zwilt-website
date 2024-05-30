@@ -3,7 +3,7 @@ import vector from "../../assets/Vector.png";
 import menu from "../../assets/Menu.png";
 import closeMenu from "../../assets/Close.png";
 import zwilt from "../../assets/zwilt.png";
-import { toggleMenu } from "../../Actions/menuAction";
+import { toggleMenu } from "../../Redux/Actions/menuAction";
 import { useEffect, useRef } from "react";
 
 const Nav = () => {
@@ -36,7 +36,7 @@ const Nav = () => {
   }, [isMenuOpen, dispatch]);
   return (
     <>
-      <div className="flex place-items-center justify-between px-4 py-1 border-r-2 bg-[var(--accent200)] mx-4 my-5 rounded-xl drop-shadow-2xl text-white relative max-[350px]:flex-row-reverse max-[350px]:justify-between md:mx-8 lg:mx-12">
+      <div className="flex place-items-center justify-between px-4 py-1 border-r-2 bg-[var(--accent200)] mx-4 my-5 rounded-xl drop-shadow-2xl text-white relative md:mx-8 lg:mx-12 max-[500px]:flex-row-reverse">
         <div className="flex justify-between md:hidden">
           <button
             ref={menuButtonRef}
@@ -84,7 +84,7 @@ const Nav = () => {
             <li>Articles</li>
             <li>About Us</li>
             <li>Contact Us</li>
-            <div className="hidden max-[350px]:block">
+            <div className="hidden max-[500px]:block">
               <button className="bg-transparent font-normal">Log In</button>
               <button className="bg-white text-black rounded-2xl font-normal">
                 Join Now
@@ -92,7 +92,7 @@ const Nav = () => {
             </div>
           </ul>
         </div>
-        <div className="flex gap-2 text-sm md:text-base max-[350px]:hidden">
+        <div className="flex gap-2 text-sm md:text-base max-[500px]:hidden">
           <button className="bg-transparent font-normal">Log In</button>
           <button className="bg-white text-black rounded-2xl font-normal">
             Join Now

@@ -6,12 +6,12 @@ const Error = () => {
 
   return (
     <>
-      <div className="jumbotron" style={{textAlign:"center", paddingTop:"100px"}}>
+      <div className="place-items-center text-center">
         <h1>There is nothing here</h1>
         <p className="alert alert-warning">{error.statusText || error?.message}</p>
         <p>
-          <Link to="/" className="">
-            Go back to home page
+          <Link to="/" className="font-bold">
+            Go Home
           </Link>
         </p>
       </div>

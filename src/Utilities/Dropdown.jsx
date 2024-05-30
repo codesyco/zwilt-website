@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { toggleDropdown } from "../Actions/dropDownAction";
+import { toggleDropdown } from "../Redux/Actions/dropDownAction";
 import vector1 from "../assets/Vector (10).png";
 import vector2 from "../assets/Vector (11).png";
 

@@ -7,10 +7,10 @@ import quote from '../../assets/“.svg'
 const SecondBanner = () => {
   return (
     <div className="bg-[#202229] text-white parallelogram-clip-sections pt-32 pb-32 px-5 flex flex-col gap-28 lg:px-16 lg:flex-row lg:py-80 lg:justify-between relative">
-      <img src={quote} alt="" className="absolute right-0 top-0"/>
+      <img src={quote} alt="" className="absolute right-0 top-0 w-[100px] md:w-auto"/>
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-5 lg:max-w-[350px]">
-          <div className="text-5xl font-bold gap-5 md:text-6xl">
+          <div className="text-5xl z-10 font-bold gap-5 md:text-6xl">
             How it worked for Jason{" "}
             <img
               src={groveGif}

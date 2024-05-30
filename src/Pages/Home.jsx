@@ -1,9 +1,9 @@
-import FifthBanner from "../Components/Banner/FifthBanner.jsx";
-import FirstBanner from "../Components/Banner/FirstBanner.jsx";
-import FourthBanner from "../Components/Banner/FourthBanner.jsx";
-import SecondBanner from "../Components/Banner/SecondBanner.jsx";
-import SixthBanner from "../Components/Banner/SixthBanner.jsx";
-import ThirdBanner from "../Components/Banner/ThirdBanner.jsx";
+import FifthBanner from "../Components/Why-Zwilt/WhyZwilt.jsx";
+import FirstBanner from "../Components/Marketplace/Markeyplace.jsx";
+import FourthBanner from "../Components/Journey/Journey.jsx";
+import SecondBanner from "../Components/Groove/SecondBanner.jsx";
+import SixthBanner from "../Components/FAQ/Faq.jsx";
+import ThirdBanner from "../Components/Process/Process.jsx";
 import Hero from "../Components/Hero/Hero";
 
 const Home = () => {

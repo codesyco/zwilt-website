@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
-import { setActiveTab } from "../../Actions/tabActions";
-import { setInputValue } from "../../Actions/inputAction";
+import { setActiveTab } from "../../Redux/Actions/tabActions";
+import { setInputValue } from "../../Redux/Actions/inputAction";
 import vector2 from "../../assets/Vector (1).png";
 import heroUserIcon from "../../assets/hero.gif";
 
@@ -32,13 +32,15 @@ const Hero = () => {
       "Explore More"
     ],
     "Design & Creative": [
-      "Data Scientist",
-      "Front End Developer",
-      "Shopify Developer",
-      "Back End Developer",
-      "Astro Developer",
-      "Vue Developer",
-      "Full Stack Developer",
+      "Graphics Designer",
+      "3D artist",
+      "UI/UX Designer",
+      "Adobe Desginer",
+      "Phototgrapher",
+      "Animator",
+      "Videographer",
+      "Cinematographer",
+      "Art Director",
       "Explore More",
     ],
   };
@@ -121,7 +123,7 @@ const Hero = () => {
                 )}
               </div>
             ) : (
-              <div className="flex gap-4 min-[470px]:text-xl md:gap-10">
+              <div className="flex flex-wrap gap-6 md:gap-10 font-light min-[470px]:text-lg md:justify-between lg:justify-between">
                 <ul className="flex flex-col gap-2">
                   {list1.map((item) => (
                     <li key={item} className="opacity-75">{item}</li>
@@ -129,6 +131,11 @@ const Hero = () => {
                 </ul>
                 <ul>
                   {list2.map((item) => (
+                    <li key={item} className="opacity-75">{item}</li>
+                  ))}
+                </ul>
+                <ul>
+                  {list3.map((item) => (
                     <li key={item} className="opacity-75">{item}</li>
                   ))}
                 </ul>
